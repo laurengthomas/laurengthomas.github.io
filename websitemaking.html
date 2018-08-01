@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <!--This is an html comment-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style media="screen">
+
+/* dropdown box */
+
+    .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {background-color: #ddd;}
+
+    .show {display: block;}
+
+/* social media buttons */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+    img {
+      width: 320px;
+      height:240px;
+
+    }
+      h1 {
+        color: #082F4D; <!--This color is the number for the header-->
+
+      }
+      html {
+        color: #295373;
+        background: #9CC9EC;
+      }
+    </style>
+
+    <title></title>
+  </head>
+  <body>
+
+
+    <h1>All About Me: Lauren Thomas!</h1>
+
+
+    <p>Click on the button to open the dropdown menu.</p>
+
+    <div class="<Menu">
+    <button onclick="myFunction()" class="dropbtn">Menu</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#music">Music</a>
+        <a href="#film">Film</a>
+      </div>
+    </div>
+
+    <script>
+
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+
+
+    <p><b>BIO:</b></p>
+    <p>Hi. I am Lauren. I am 16 and will be in the 12th grade in the fall RIP. I have a dog named Mayci and I play the oboe in my free time. I am an avid music listener and enjoy podcasts about music production.</p>
+    <p><b>Thing I like:</b></p>
+    <p>Soccer, being indoors/air conditioning, and eating pretzels</p>
+    <p><b>Thing I DO NOT like:</b></p>
+    <p>Spiders</p>
+    <p><b>A Lil Fun Fact About Me:</b></p>
+    <p>I didn’t know Ohio was eastern United States until yesterday. I literally thought it was next to Utah.</p>
+    <br><hr>
+
+
+  <ol>
+    <p><b>You can constantly find me on the following websites:</b></p>
+    <p><li>Wikipedia: You can teach yourself anything from Wikipedia.</li></p>
+    <a href="https://www.wikipedia.org/">Go to Wikipedia</a>
+    <p><li>Twitter: Yes, twitter counts as a website and yes it is the best social media site.</li></p>
+    <a href="https://twitter.com/">Go to Twitter</a>
+    <p><li>Youtube: I’ll watch everything from music videos to film analyses.</li></p>
+    <a href="https://www.youtube.com/">Go to YouTube</a>
+  </ol>
+    <br>
+    <img src="giphy.gif"/>
+
+  <br>
+      <p><b> Wanna know more about me? C'mon! What are ya waiting for? Click the link!</b></p>
+        <a href="next_page.html">What kinds of music do I like?</a>
+  <br>
+  <br>
+<!-- social media buttons -->
+<a>Check out the following links if you want? Also, shame on you if you click vimeo.</a>
+<br>
+<br>
+<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/" class="fa fa-twitter"></a>
+<a href="https://plus.google.com/discover" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+<a href="https://www.skype.com/en/" class="fa fa-skype"></a>
+<a href="https://www.android.com/" class="fa fa-android"></a>
+<a href="http://dribble.com/" class="fa fa-dribbble"></a>
+<a href="https://vimeo.com/" class="fa fa-vimeo"></a>
+<a href="https://www.tumblr.com/" class="fa fa-tumblr"></a>
+<a href="https://vine.co/" class="fa fa-vine"></a>
+<a href="https://foursquare.com/" class="fa fa-foursquare"></a>
+<a href="https://s3.amazonaws.com/www.stumbleupon.com/index.html" class="fa fa-stumbleupon"></a>
+<a href="https://www.flickr.com/" class="fa fa-flickr"></a>
+<a href="https://www.yahoo.com/" class="fa fa-yahoo"></a>
+<a href="https://www.reddit.com/" class="fa fa-reddit"></a>
+<a href="https://soundcloud.com/" class="fa fa-rss"></a>
+
+
+
+  </body>
+
+
+
+
+
+  <script>
+
+
+
+  alert("Hey! Welcome to my site!")
+    if (confirm("Press ok or cancel!")) {
+      txt = "Woohoo! You clicked ok!";
+    }
+    else {
+      txt = "Booooo! You clicked cancel!";
+    }
+  alert(txt);
+
+
+
+  </script>
+
+</html>
